@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+body{
+    user-select: none;
+    overflow: hidden;
+}
+.top_menu{
+    width: 6vw;
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10;
+}
+.icon_svg_active{
+    position: absolute;
+    overflow: hidden;
+    z-index: 11;
+}
+#a_svg_0{
+    display: none;
+}
+.svg_sun{
+    fill: white;
+}
+.top_menu_right{
+    height: 3rem;
+    width: 3rem;
+    background: rgba(0, 0, 0, 0);
+    transition: all 0.25s linear;
+    z-index: 10;
+}
+.menu_a{
+    /*z-index: 10;*/
+    position: relative;
+    right: 0;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line1{
+    position: relative;
+    width: 70%;
+    height: 3px;
+    border-radius: 25px;
+    background-color: #000;
+    transform: translateY(-5px);
+    transition: all 0.25s linear;
+}
+.line2{
+    position: relative;
+    width: 40%;
+    height: 3px;
+    border-radius: 25px;
+    background-color: #000;
+    transform: translateY(5px);
+    transition: all 0.25s linear;
+}
+.open .line1{
+    transform: translateY(1px) rotate(-45deg);
+    width: 50%
+}
+.open .line2{
+    transform: translateY(-1px) rotate(45deg);
+    width: 50%
+}
+.menu_hidden{
+    display: none;
+    background-color: #545050;
+}
+.icon_s{
+    display: flex;
+    width: 3vw;
+    height: 3rem;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    fill: white;
+}
+.section{
+    height: 100vh;
+    width: 100vw;
+}
+.section1{
+    background: aquamarine;
+}
+.section2{
+    background: #1313a2;
+}
+.section3{
+    background: #7283c4;
+}
+.section4{
+    background: #ab4482;
+}
